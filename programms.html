@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<title> Riskers </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+  background-image: url('img/prr.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: skyblue;
+   color: white;
+   text-align: center;
+}
+</style>
+<body>
+    
+
+
+<textarea  rows="20" cols="50" readonly >
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        StringBuilder st=new StringBuilder();
+        String s=sc.next();
+        for(int i=0;i<s.length();i++){
+            while(i<s.length()-1 && s.charAt(i)==s.charAt(i+1)){
+                i++;
+            }
+            st.append(s.charAt(i));
+        }
+        System.out.println(st.reverse());
+    }
+}
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+Palindrome Number without 0
+
+-----------------------------------------------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,p=0;
+    scanf("%d",&n);
+    while(n!=0)
+    {
+        int r=n%10;
+        if(r!=0)
+        {
+            p=p*10+r;
+        }
+        n=n/10;
+    }
+    int m,l=0;
+    m=p;
+    while(p!=0)
+    {
+        int a=p%10;
+        l=l*10+a;
+        p=p/10;
+    }
+    if(m==l)
+    {
+        printf("yes");
+    }
+    else{
+        printf("no");
+    }
+    return 0;
+}
+</textarea>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+ <div class="footer">
+  <p>Designed And Developed By @Balu Phanendra</p>
+</div>
+
+</html>
