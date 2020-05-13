@@ -197,10 +197,35 @@ int main() {
   </textarea> 
  
 <h1 style="color:yellow;text-align:center;font-family:verdana;">CoCubes Pre-assessment-2 Programs </h1>
+<textarea  rows="20" cols="50" readonly >
+  
+Simple Interest 4
+Given a principle amount, rate of interest and the final amount, Find out the time in years it will be required to get that amount from the principle. The interest is simple interest.
+--------------------------------------------
+import java.io.*;
+import java.util.*;
 
+public class Solution {
 
-
-
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int p=sc.nextInt();
+        int r=sc.nextInt();
+        int si=sc.nextInt();
+        int mul=p*r;
+        int time = 100 * (si-p);
+        int total=time/mul;
+        if(time%mul==0){
+        System.out.println(total);
+        }
+        else 
+            System.out.println(total+1);
+        }
+}
+  
+  </textarea> 
+  
 
 </body>
   </br>
