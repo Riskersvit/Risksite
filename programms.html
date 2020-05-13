@@ -91,8 +91,106 @@ int main() {
 }
 </textarea>
 
+<textarea  rows="20" cols="50" readonly >
+  Take a string as input. Display how many vowels it has. Reverse the string and change small to capital and capital to small. 
+  ----------------------------------------------------------------
+  import java.io.*;
+import java.util.*;
 
+public class Solution {
 
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String st=s.next();
+        String st1="";
+        int c=0;
+        for(int i=0;i<st.length();i++){
+            if(st.charAt(i)=='A' || st.charAt(i)=='E' || st.charAt(i)=='I' || st.charAt(i)=='O' || st.charAt(i)=='U' || st.charAt(i)=='a' || st.charAt(i)=='e' || st.charAt(i)=='i' || st.charAt(i)=='o' || st.charAt(i)=='u'){
+                c=c+1;
+                
+            }       
+        }
+        for(int i=0;i<st.length();i++){
+            if(Character.isUpperCase(st.charAt(i))==true){
+                st1=st1+ Character.toLowerCase(st.charAt(i));  
+            }
+            else{
+                st1=st1+ Character.toUpperCase(st.charAt(i));
+            }
+        }
+        StringBuffer sbf = new StringBuffer(st1);
+        sbf.reverse();
+        String sv = new String(sbf);
+        System.out.println(c);
+        System.out.println(sv);
+    }
+}
+  
+ </textarea>
+  
+<textarea  rows="20" cols="50" readonly >
+  
+Find pairs with a given sum in sorted array
+-------------------------------------------
+  import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int[] ar=new int[n];
+        for(int i=0;i<n;i++){
+            ar[i]=s.nextInt();
+        }
+        int k=s.nextInt();
+        int c=0;
+        for(int i=0;i<n;i++){
+            for(int j=i+1;j<n;j++){
+                if(ar[i]+ar[j]==k){
+                    c=c+1;
+                    System.out.println(ar[i]+" "+ar[j]);
+                }
+            }
+        }
+        if(c==0){
+            System.out.println("-1");
+        }
+    }
+}
+                                    
+ </textarea>
+  
+<textarea  rows="20" cols="50" readonly >
+  
+relative speed
+-------------------------
+  #include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int d1,t1,d2,t2,dir;
+    scanf("%d%d%d%d%d",&d1,&t1,&d2,&t2,&dir);
+    int s1= (int)d1/t1;
+    int s2= (int)d2/t2;
+    if(dir==1)
+    {
+        printf("The relative speed is %d",s1-s2);
+    }
+    else
+    {
+        printf("The relative speed is %d",s1+s2);
+    }
+    
+    return 0;
+}
+  
+  </textarea> 
 
 
 
