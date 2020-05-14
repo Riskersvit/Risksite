@@ -318,6 +318,79 @@ public class Solution {
     }
 }
  </textarea>  
+  <textarea  rows="20" cols="50" readonly >
+    
+count numbers with specific digits
+---------------------------------------------
+    import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static boolean calci(int n){
+        String st=Integer.toString(n);
+        int i;
+        for(i=0;i<st.length();i++){
+            if(st.charAt(i)=='1' || st.charAt(i)=='4' || st.charAt(i)=='9')
+                continue;
+            else
+                break;
+        }
+        if(i==st.length()) return true;
+        else return false;
+    }
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        if(a>b) System.out.println("-1");
+        else{
+        int count=0;
+        for(int i=a;i<=b;i++){
+            if(calci(i)==true)
+                count++;
+        }
+        System.out.println(count);
+        }
+    }
+}
+     </textarea> 
+  <textarea  rows="20" cols="50" readonly >
+    product of smallest pair 
+    ------------------------------
+    import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc=new Scanner(System.in);
+        int sum=sc.nextInt();
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        Arrays.sort(arr);
+        int i=0,j=1;
+        while(true){
+            if(j==n){
+                System.out.print("-1");
+                break;
+            }
+            if(arr[i]+arr[j]<=sum){
+                System.out.println(arr[i]*arr[j]);
+                break;
+            }
+            else{
+                j++;
+            }
+        }
+    }
+}
+    </textarea>
+   
   
 
 </body>
