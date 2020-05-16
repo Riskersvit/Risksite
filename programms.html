@@ -449,7 +449,44 @@ int main()
 }
        
        </textarea>
-     
+<h1 style="color:yellow;text-align:center;font-family:verdana;">CoCubes Pre-assessment-4 Programs </h1>	     
+<textarea  rows="20" cols="50" readonly >	 
+ Collatz Sequence Number		
+ ----------------------------		
+ import java.io.*;		
+ import java.util.*;
+
+public class Solution {
+    static void printCollatz(int n){ 
+        int count=0;
+        while (n != 1){  
+            if(n%2 == 1){ 
+                n = 3 * n + 1; 
+                count++;
+            }
+            else{ 
+                n = n / 2; 
+                count++;
+            }
+        }
+        System.out.print(count); 
+    } 
+    public static void main (String[] args) { 
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        printCollatz(n); 
+    } 
+}
+</textarea>	
+<textarea  rows="20" cols="50" readonly >		     
+
+	
+	
+	
+</textarea>
+
+		 
+      
 </body>
   </br>
   </br>
