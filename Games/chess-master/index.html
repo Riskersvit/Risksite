@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166644321-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166644321-1');
+</script>
+
+
+
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/foot.css">
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<title>Chess</title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.0/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="chess.css">
+		<link rel="shortcut icon" href="chess.ico">
+	</head>
+	<body>
+		<h1>Chess</h1>
+		<div id="content">
+			<div id="chessboard" role="main"></div>
+			<div id="moves"></div>
+			<div id="clear"></div>
+			<div id="help">
+				<ul>
+					<li>Moves can be made by dragging the pieces on the board, or by clicking the move links in the right panel.</li>
+					<li>Pawns dragged to the last rank are promoted to queens. Use the move links in the right panel to underpromote.</li>
+					<li>Castle by moving the king two squares towards a rook. The rook moves automatically.</li>
+				</ul>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<div id="dim"></div>
+		<script src="https://code.jquery.com/jquery-1.9.0.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.10.0/jquery-ui.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+		<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/augment.js/1.0.0/augment.min.js"></script><![endif]-->
+		<script src="chess.min.js"></script>
+		<script>
+			$(makeChessGame);
+		</script>
+
+
+
+		<div class="footer">
+  		<p>Designed And Developed By @Balu Phanendra</p>
+		</div>
+	</body>
+</html>
