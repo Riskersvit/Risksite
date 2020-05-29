@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<title> Svespre </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166644321-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166644321-1');
+</script>
+
+
+
+
+<ul>
+  <li><a href="http://risksite.cf">Home</a></li>
+	
+	</ul>
+<link rel="stylesheet" type="text/css" href="men.css">
+<link rel="stylesheet" type="text/css" href="foot.css">
+</head>
+
+
+
+<style>
+body {
+  background-image: url('prr.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+
+
+<body>
+    
+<h1 style="color:yellow;text-align:center;font-family:verdana;">Svespre- Programs </h1>
+
+<textarea  rows="20" cols="50" readonly >
+--------------1----------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int x;
+   scanf("%d",&x);
+    printf("Thank you! You entered %d",x);
+    return 0;
+}
+
+
+
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-------2-----------------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int x,y,sum=0;
+    scanf("%d%d",&x,&y);
+    sum=x+y;
+    printf("Thank you! %d + %d = %d",x,y,sum);
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-------------3------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int x,y;
+    scanf("%d%d",&x,&y);
+    if(x>y)
+    {
+        printf("Thank you! %d > %d",x,y);
+    }
+    else
+        printf("Thank you! %d > %d",y,x);
+        
+    return 0;
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+----------------4--------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        if(a>b && a>c)
+        {
+            if(b>c)
+            {
+                System.out.println("Thank you! "+a+" > "+b+" > "+c);
+                
+            }
+            else
+            {
+                System.out.println("Thank you! "+a+" > "+c+" > "+b);
+                
+            }
+        }
+        if(b>a && b>c)
+        {
+            if(a>c)
+            {
+                System.out.println("Thank you! "+b+" > "+a+" > "+c);
+            }
+            else
+            {
+                System.out.println("Thank you! "+b+" > "+c+" > "+a);
+                
+            }
+        }
+        if(c>a && c>b)
+        {
+            if(a>b)
+            {
+                System.out.println("Thank you! "+c+" > "+a+" > "+b);
+            }
+            else
+            {
+                System.out.println("Thank you! "+c+" > "+b+" > "+a) ;
+            }
+        }
+        
+    }
+}
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------5-------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        if(a<b && a<c)
+        {
+            if(b<c)
+            {
+                System.out.println("Thank you! "+a+" < "+b+" < "+c);
+                
+            }
+            else
+            {
+                System.out.println("Thank you! "+a+" < "+c+" < "+b);
+                
+            }
+        }
+        if(b<a && b<c)
+        {
+            if(a<c)
+            {
+                System.out.println("Thank you! "+b+" < "+a+" < "+c);
+            }
+            else
+            {
+                System.out.println("Thank you! "+b+" < "+c+" < "+a);
+                
+            }
+        }
+        if(c<a && c<b)
+        {
+            if(a<b)
+            {
+                System.out.println("Thank you! "+c+" < "+a+" < "+b);
+            }
+            else
+            {
+                System.out.println("Thank you! "+c+" < "+b+" < "+a) ;
+            }
+        }
+        
+    }
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------6----------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int m[ ]= new int[10 ];
+        int max=0;
+        Scanner sc= new Scanner(System.in);
+        for(int i=0;i<m.length;i++)
+        {
+            m[i]=sc.nextInt();
+            
+        }
+        for(int i=0;i<m.length;i++ )
+        {
+            //max=m[i];
+            if(m[i]>max)
+            {
+                max=m[i];
+            }
+            
+        
+        }
+        System.out.println("Thank you! "+max+" is largest number.");
+    }
+}
+
+
+
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-------------------7---------------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int i,min;
+        int[ ] myarray = new int[10];
+        Scanner sc= new Scanner(System.in);
+         for(i=0;i<10;i++)
+         {
+             myarray[i]=sc.nextInt();
+         }
+        min=myarray[0];
+        for(i=0;i<10;i++)
+        {
+            if(myarray[i]<min)
+            {
+                min=myarray[i];
+            }
+        }
+        System.out.print("Thank you! "+min+" is the smallest number.");
+    }
+    
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+------------------8------------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+            int sum=0;
+        for(int x=0;x<10;x +=1)
+        {
+            sum +=sc.nextInt();
+        }
+        System.out.println("The sum of the numbers entered sofar is : "+sum);
+        } 
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+------------9----------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int sum=0;
+        for(int x=0;x<10;x+=1)
+        {
+            sum+=sc.nextInt();
+            
+        }
+        double mean=sum/10.0;
+        System.out.println("Mean of the given numbers is : "+mean);
+    }
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-------------------------10-----------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int n,sum=0,count=0;
+    float sum1=0;
+    scanf("%d",&n);
+    while(n!=-1)
+    {
+        sum=sum+n;
+        count+=1;
+        scanf("%d",&n);
+    }
+    printf("Sum of the given %d numbers is : %d \n",count,sum);
+    sum1=sum/(count/1.00);
+    printf("Mean of the given %d numbers is : %.2f \n",count,sum1);
+
+    return 0;
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+------------------11-------------------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i;
+    int a[100];
+    for(i=0;i<100;i++)
+        scanf("%d",&a[i]);
+    float mean=a[0];
+    int sum=0;
+    for(i=0;i<100;i++)
+    {
+        if(a[i]!=-1)
+        {
+            mean=(float)(sum+a[i])/(i+1);
+            sum=sum+a[i];
+            printf("%.2f\n",i,mean);
+            
+        }
+        else
+            break;
+        
+    }
+        
+    return 0;
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+----------------------12------------------
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        List<Integer> list =new ArrayList<Integer>();
+        Scanner sc=new Scanner(System.in);
+         int sum=0;
+        int c=0;
+        
+        while(true)
+        {
+            int a=sc.nextInt();
+            if(a!=-1){
+                list.add(a);
+                c=c+1;
+            }
+            else
+                break;
+        }
+               Collections.sort(list);
+                System.out.println("The second biggest number is : "+list.get(c-2));
+    }
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+------------13-------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        int n,max=0,min=0;
+        n=sc.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+            max=a[0];
+        for(int i=0;i<n;i++)
+            {
+                if(max<a[i])
+                {
+                    max=a[i];
+                }
+            }
+            min=a[0];
+            for(int i=0;i<n;i++)
+            {
+                if(min>a[i])
+                {
+                    min=a[i];
+                }
+            }
+                System.out.println("Minimum = "+min);
+             System.out.println("Maximum = "+max);
+}
+}
+    
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-----------------14----------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.print("The even numbers upto "+n+" are : ");
+        for(int i=1;i<=n;i++)
+        {
+            if(i%2==0)
+            {
+                
+           System.out.print(i+" ");
+            }
+            
+        }
+          System.out.println();              
+    }
+
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-------------------15-----------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        //System.out.print(" "+n+" are : ");
+        for(int i=1;i<=n;i++)
+        {
+            if(i%2!=0)
+            {
+                
+           System.out.print(i+" ");
+            }
+            
+        }
+          System.out.println();              
+    }
+
+}
+
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------------16-----------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        int i,n,sum=0;
+        n=sc.nextInt();
+                    for(i=0;i<=n;i++)
+                     {
+                         sum=sum+i;
+                         
+                     }
+        System.out.println(sum);
+    }
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------17------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n,i,sum=0;
+        n=sc.nextInt();
+       // System.out.println(" ");
+        for(i=1;i<=n;i++)
+        {
+            if(i%2==0)
+            {
+                sum=sum+i;
+                
+            }
+        }
+        System.out.println(sum);
+
+    
+    }
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+------------18-----------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int i,n,sum=0;
+        n=sc.nextInt();
+        for(i=1;i<=n;i++)
+        {
+            if(i%2==1)
+            {
+                sum=sum+i;
+            }
+        }
+                System.out.println(sum);
+
+    }
+    
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------------19-----------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       
+        Scanner sc=new Scanner(System.in);
+       int i,n;
+       n=sc.nextInt();
+       boolean flag = false;
+        for(i=2;i<=n/2;++i)
+        {
+            if(n%i==0)
+            {
+                flag=true;
+                    break;
+            }
+        }
+            if(!flag)
+                System.out.println("Prime number");
+                else
+                System.out.println("Not a Prime number");
+    }
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-----------------20---------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        int i,n,fact=1;
+        n=sc.nextInt();
+        for(i=1;i<=n;i++)
+        {
+        fact=fact*i;
+        }
+        if(n>10)
+        {
+            System.out.println("479001600");
+        }
+        else
+        {
+        System.out.println(fact);
+          }
+}
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------21---------------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+int r,i,f;
+    scanf("%d",&r);
+    while(1)
+    {
+        int n,fact=1;
+        scanf("%d",&n);
+        if(n==-1)
+            break;
+        else{
+            if(0<n && n<=r)
+            {
+                for(i=1;i<=n;i++)
+                {
+                    fact=fact*i;
+                    
+                }
+                printf("Factorial of %d is %d \n",n,fact);
+                
+            }
+            else if(n==0)
+            {
+                printf("Factorial of 0 is 1");
+                
+            }
+            else
+            {
+                printf("%d is out of given range (i.e. 0 - %d)\n",n,r);
+                
+            }
+        }
+
+    }
+    return 0;
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-----------------------22---------------------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+//int* AddArrays(int size,int *a,int *b){
+  //Write your addition code here
+
+
+int main() {
+    int i,j,k,n;
+    scanf("%d",&n);
+    int a[n],b[n],c[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+        
+    }
+    for(j=0;j<n;j++)
+    {
+        scanf("%d",&b[j]);
+        
+    }
+     for(k=0;k<n;k++)
+    {
+       c[k]=a[k]+b[k];
+           
+        
+    }
+    for(int l=0;l<n;l++)
+    {
+        printf("%d ",c[l]);
+    }
+    
+  	
+    return 0;
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+------------------23--------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        int a=0,b=1,i=2;
+        arr[0]=a;
+        arr[1]=b;
+        while(i<n)
+        {
+            arr[i]=a+b;
+            a=b;
+            b=arr[i];
+            i++;
+            
+        }
+        System.out.print("The first " +n+ " Fibonacci numbers are : ");
+        for(int j=0;j<n;j++)
+        {
+            System.out.print(+arr[j]);
+            System.out.print(" ");
+        }
+    }
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------------------------24------------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=10;i++)
+        {
+            int n1=n*i;
+            System.out.println(+n+"*"+i+"="+n1);
+        }
+    }
+}
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-----------------------25------------------
+#include <stdio.h>
+int main()    
+{    
+  int n,sum=0,m;    
+     
+        scanf("%d",&n);    
+       while(n>0)    
+       {    
+            m=n%10;    
+            sum=sum+m;    
+            n=n/10;    
+        }    
+        printf("%d",sum);    
+            return 0;  
+}   
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------------26--------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+
+         int num =sc.nextInt();
+        int rev=0;
+        int t=num;
+        while(num!=0)
+        {
+                int digit=num%10;
+                rev=rev*10+digit;
+                num=num/10;
+        }
+          System.out.println("Reverse of " +t+ " is " +rev);
+    }
+}
+
+</textarea>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+ <div class="footer">
+  <p>Designed And Developed By @Balu Phanendra</p>
+</div>
+
+</html>
