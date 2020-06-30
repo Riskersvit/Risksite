@@ -42,6 +42,28 @@ body {
 <h1 style="color:yellow;text-align:center;font-family:verdana;">Array-level-1- Programs </h1>
 
 <textarea  rows="20" cols="50" readonly >
+----------1------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int n,i;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("%d ",a[i]);
+    }
+    return 0;
+}
 
 
 
@@ -50,64 +72,419 @@ body {
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+	----2----
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int n,i;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=n-1;i>=0;i--)
+    {
+            printf("%d ",a[i]);
+        
+    }
+    return 0;
+}
+
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+------------3-------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int n,i;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i=i+2)
+    {
+        printf("%d ",a[i]);
+    }
+    return 0;
+}
+
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-----------4-----------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int n,i;
+    scanf("%d",&n);
+    int a[n];
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if((a[i]%2==0) & (a[i]!=0))
+        {
+           printf("%d ",a[i]); 
+        }
+    }
+    return 0;
+}
+
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-----------5------------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int lessThanK(int *a,int size,int k){
+  //write your code here
+    int j,count=0;
+    for(j=0;j<size;j++)
+    {
+        if(a[j]<k)
+        {
+            count=count+1;
+        }
+    }
+    return count;
+}
+int main() {
+  	int n,a[100],k,i;
+  	scanf("%d",&n);
+  	for(i=0;i<n;i++)
+      scanf("%d",&a[i]);
+  	scanf("%d",&k);
+  	printf("%d",lessThanK(a,n,k));
+    return 0;
+}
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+---------6-------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int isArrayPalindrome(int *a,int size){
+  //write your code here
+    for(int i=0;i<size/2;i++)
+    {
+        if(a[i]!=a[size-i-1])
+        {
+            return 0;
+        }
+    }
+    return 1;
+}
+int main() {
+      int n,a[100],i;
+      scanf("%d",&n);
+      for(i=0;i<n;i++)
+      scanf("%d",&a[i]);
+      printf("%d",isArrayPalindrome(a,n));
+    return 0;
+}
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+----------------7------------------
+n=int(input())
+l=[int(x) for x in input().split(" ")]
+l.sort(reverse=True)
+print(l[0])
+
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+---------------8----------------
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int n;
+    scanf("%d\n",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d ",&a[i]);
+    }
+    int max=a[0];
+    int min=a[0];
+    for(int i=1;i<n;i++)
+    {
+        if(max<a[i])
+        {
+            max=a[i];
+        }
+        if(min>a[i])
+        {
+            min=a[i];
+        }
+    }
+    printf("%d, %d",min,max);
+    return 0;
+}
+
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+------------9----------------
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int n;
+    scanf("%d\n",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d ",&a[i]);
+    }
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            if(a[i]>a[j])
+            {
+                int t=a[j];
+                a[j]=a[i];
+                a[i]=t;
+            }
+        }
+    }
+    printf("%d",a[1]);
+    return 0;
+}
+
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-------10-------------
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+------------11------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int noOfDuplicates(int* a){
+  //write your cod ehere
+    int count=0,j;
+    for(int i=0;i<sizeof(a);)
+    {
+        for(j=i+1;j<sizeof(a);j++)
+        {
+            if(a[i]==a[j])
+            {
+                if(a[i]!=a[j+1])
+                {
+                    count++;
+                    break;
+                
+                }
+            }
+        }
+        i=j+1;
+    }
+    return count;
+}
+   
+int main() {
+    int a[100],n,i;
+      scanf("%d",&n);
+      for(i=0;i<n;i++)
+          scanf("%d",&a[i]);
+      printf("%d",noOfDuplicates(a));
+    return 0;
+}
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-----------12-------------
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+     int n;
+    scanf("%d\n",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d ",&a[i]);
+    }
+    int sum=0;
+    for(int i=0;i<n;i++)
+    {
+        sum=sum+a[i];
+    }
+    printf("%d",sum);
+
+    return 0;
+}
+
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+--------13-----------
+n=int(input())
+list1=[int(x) for x in input().split(" ")]
+list2=[int(x) for x in input().split(" ")]
+for i in range(n):
+    print(list1[i]+list2[i],end=" ")
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+------------14------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d\n",&n);
+        int a[n],b[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d ",&a[i]);
+    }
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d ",&b[i]);
+    }
+    int count=0;
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n;j++)
+        {
+            if(a[i]==b[j])
+            {
+                count=count+1;
+            }
+        }
+    }
+    if(count==n)
+    {
+        printf("1");
+    }
+    else{
+        printf("0");
+    }
+
+    return 0;
+}
+
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-----------15-----------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d\n",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    int m;
+    scanf("%d\n",&m);
+    int b[m];
+    for(int i=0;i<m;i++)
+    {
+        scanf("%d",&b[i]);
+    }
+    int k=n+m;
+    int c[k],j=0;
+    for(int i=0;i<k;i++)
+    {
+        if(i<n)
+        {
+            c[i]=a[i];
+        }
+        else
+        {
+            c[i]=b[j];
+            j++;
+        }
+    }
+    for(int i=0;i<k;i++)
+    {
+        for(int l=0;l<k;l++)
+        {
+            if(c[i]<c[l])
+            {
+                int t=c[i];
+                c[i]=c[l];
+                c[l]=t;
+            }
+        }
+    }
+    for(int i=0;i<k;i++)
+    {
+        printf("%d ",c[i]);
+    }
+    
+
+  
+    return 0;
+}
+
 
 </textarea>
 
-<textarea  rows="20" cols="50" readonly >
 
-</textarea>
-
-<textarea  rows="20" cols="50" readonly >
-
-</textarea>
 
 
 
