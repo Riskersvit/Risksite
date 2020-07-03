@@ -42,6 +42,47 @@ body {
 <h1 style="color:yellow;text-align:center;font-family:verdana;">Array-level-2- Programs </h1>
 
 <textarea  rows="20" cols="50" readonly >
+-------1--------------
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int n;
+    scanf("%d\n",&n);
+    int a[n],b[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d ",&a[i]);
+    }
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d ",&b[i]);
+    }
+    int f=0;
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]<b[i])
+        {
+            f=1;
+            break;
+        }
+    }
+    if(f==1)
+    {
+        
+        printf("Incompatible");
+    }
+    else
+    {
+        printf("Compatible");
+    }
+    return 0;
+}
+
 
 
 
@@ -50,38 +91,230 @@ body {
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-----------2----------
+
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-----------3-------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int []a=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        int sum=0,max=0;
+        for(int i=1;i<n;i++)
+        {
+            for(int j=0;j<i;j++)
+            {
+                sum=a[i]-a[j];
+                if(sum>max)
+                {
+                    max=sum;
+                }
+            }
+        }
+        System.out.println("Maximum difference : "+max);
+    }
+}
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+------------4------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int []a=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        int i=0;
+        int j=a.length-1;
+        while(j>=i)
+        {
+            if(a[i]!=0)
+            {
+                i++;
+            }
+            else{
+                while(a[j]==0)
+                {
+                    j--;
+                }
+               if(j>i)
+               {
+                int temp=a[i];
+                a[i]=a[j];
+                a[j]=temp;
+                i++;
+                j--;
+               }
+            }
+        }
+        System.out.print("The result : ");
+        for(i=0;i<n;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+        
+    }
+}
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+------5-------------
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-----6-------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int []a=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        int f=0;
+        for(int i=1;i<n;i++)
+        {
+            if(a[i]>a[i-1])
+            {
+             if((a[i]-a[i-1]!=1) && !(a[i]%5==0 && a[i-1]%5==0) && !(a[i]%2==0 && a[i-1]%2==0) )
+             {
+                     f=1;
+                     break;
+             }
+            }
+            else
+            {
+                f=1;
+                break;
+            }
+        }
+        if(f==1)
+        {
+            System.out.println("Not consecutive");
+        }
+        else{
+            System.out.println("Consecutive");
+        }
+    }
+}
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-----------7--------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int []a=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        Arrays.sort(a);
+        int count=1;
+        int f=0;
+        for(int i=0;i<n;i++)
+        {
+            if(count<4)
+            {
+                if(f!=a[n-i-1])
+                {
+                    System.out.print(a[n-i-1]+" ");
+                    f=a[n-i-1];
+                    count++;
+                }
+            }
+            else
+            {
+                break;
+            }
+        }
+    }
+}
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-----8---------------
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+------------9---------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int m=s.nextInt();
+        int []a=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        if(n<m)
+        {
+            System.out.println("Please enter correct input");
+        }
+        else{
+            m=m%n;
+            for(int i=0;i<n;i++)
+            {
+                if(i<m)
+                {
+                    System.out.print(a[n+i-m]+" ");
+                }
+                else{
+                    System.out.print(a[i-m]+" ");
+                }
+            }
+        }
+    }
+}
 
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+------------10------------
 
 </textarea>
 
