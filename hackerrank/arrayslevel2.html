@@ -551,56 +551,6 @@ public class Solution {
 	
 <textarea  rows="20" cols="50" readonly >
 ------------31------------
-
-</textarea>
-	
-<textarea  rows="20" cols="50" readonly >
-------------32-----------
-
-</textarea>
-	
-<textarea  rows="20" cols="50" readonly >
-----------33-----------
-
-</textarea>
-	
-<textarea  rows="20" cols="50" readonly >
-----------34------
-
-</textarea>
-	
-<textarea  rows="20" cols="50" readonly >
---------35-------------
-
-</textarea>
-	
-<textarea  rows="20" cols="50" readonly >
----------36-----------
-
-</textarea>
-	
-<textarea  rows="20" cols="50" readonly >
------------37------------
-
-</textarea>
-	
-<textarea  rows="20" cols="50" readonly >
----------38---------------
-
-</textarea>
-	
-<textarea  rows="20" cols="50" readonly >
-----------39-------------
-
-</textarea>
-	
-<textarea  rows="20" cols="50" readonly >
----------40-------
-
-</textarea>
-	
-<textarea  rows="20" cols="50" readonly >
-----------41--------------
 import java.io.*;
 import java.util.*;
 
@@ -625,13 +575,13 @@ public class Solution {
 </textarea>
 	
 <textarea  rows="20" cols="50" readonly >
------------42---------
-	
+------------32-----------
+
+
 </textarea>
 	
-	
 <textarea  rows="20" cols="50" readonly >
-------------43-----------
+----------33-----------
 import java.io.*;
 import java.util.*;
 import java.lang.*;
@@ -668,7 +618,7 @@ public class Solution {
 </textarea>
 	
 <textarea  rows="20" cols="50" readonly >
-------------44-----------
+----------34------
 import java.io.*;
 import java.util.*;
 
@@ -704,38 +654,37 @@ public class Solution {
 </textarea>
 	
 <textarea  rows="20" cols="50" readonly >
-------------45-------------------
+--------35-------------
 
 </textarea>
 	
 <textarea  rows="20" cols="50" readonly >
-------------46-------------
+---------36-----------
 
 </textarea>
 	
 <textarea  rows="20" cols="50" readonly >
-------------47-----------
+-----------37------------
 
 </textarea>
 	
 <textarea  rows="20" cols="50" readonly >
-------------48--------------
-	
+---------38---------------
+
 </textarea>
 	
 <textarea  rows="20" cols="50" readonly >
-----------49------------
-	
-</textarea>
-	
-	
-<textarea  rows="20" cols="50" readonly >
-----------50-----------------
-	
+----------39-------------
+
 </textarea>
 	
 <textarea  rows="20" cols="50" readonly >
--------------51--------------
+---------40-------
+
+</textarea>
+	
+<textarea  rows="20" cols="50" readonly >
+----------41--------------
 import java.io.*;
 import java.util.*;
 
@@ -786,7 +735,7 @@ public class Solution {
 </textarea>
 	
 <textarea  rows="20" cols="50" readonly >
------------52-------------
+-----------42---------
 import java.io.*;
 import java.util.*;
 
@@ -830,29 +779,30 @@ public class Solution {
         }
         } 
     }
-}
+}	
 </textarea>
-
-<textarea  rows="20" cols="50" readonly >
-----------53-------------
 	
-</textarea>
-
 	
 <textarea  rows="20" cols="50" readonly >
--------------54-------------
-	
-</textarea>
+------------43-----------
 
+
+</textarea>
 	
 <textarea  rows="20" cols="50" readonly >
---------------55------------
-	
-</textarea>
+------------44-----------
 
+
+
+</textarea>
 	
 <textarea  rows="20" cols="50" readonly >
-------------56-------------
+------------45-------------------
+
+</textarea>
+	
+<textarea  rows="20" cols="50" readonly >
+------------46-------------
 import java.io.*;
 import java.util.*;
 
@@ -896,20 +846,19 @@ public class Solution {
     }
 }
 </textarea>
-
 	
 <textarea  rows="20" cols="50" readonly >
-------------57-------------
+------------47-----------
+
 </textarea>
-
 	
 <textarea  rows="20" cols="50" readonly >
----------58-----------------
+------------48--------------
+	
 </textarea>
-
 	
 <textarea  rows="20" cols="50" readonly >
-----------------59-------------
+----------49------------
 import java.io.*;
 import java.util.*;
 
@@ -939,10 +888,213 @@ public class Solution {
         }
     }
 }
+	
+</textarea>
+	
+	
+<textarea  rows="20" cols="50" readonly >
+----------50-----------------
+	
+</textarea>
+	
+<textarea  rows="20" cols="50" readonly >
+-------------51--------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int m=s.nextInt();
+        if(n!=0 && m!=0)
+        {
+        for(int i=0;i<n;i++)
+        {
+            ArrayList<Integer> list=new ArrayList<>();
+            for(int j=0;j<m;j++)
+            {
+                int k=s.nextInt();
+                list.add(k);
+            }
+            Collections.sort(list);
+            for(int j=0;j<m;j++)
+            {
+                System.out.print(list.get(j)+" ");
+            }
+            System.out.println();
+        }
+        }
+        else
+        {
+            System.out.println("Invalid input");
+        }
+    }
+}
+</textarea>
+	
+<textarea  rows="20" cols="50" readonly >
+-----------52-------------
+
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+----------53-------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        if(n!=0)
+        {
+            int []a=new int[n];
+            for(int i=0;i<n;i++)
+            {
+                a[i]=s.nextInt();
+            }
+            int m=0;
+            for(int i=1;i<n;i++)
+            {
+                if(a[i]>a[m])
+                {
+                    m=i;
+                }
+            }
+            for(int i=0;i<n;i++)
+            {
+                if(i!=m)
+                {
+                    if(a[m]<(2*a[i]))
+                    {
+                        System.out.println("-1");
+                        return;
+                    }
+                }
+            }
+            System.out.println(m);
+        }
+        else
+        {
+            System.out.println("Invalid input");
+        }
+    }
+}
+	
+</textarea>
+
+	
+<textarea  rows="20" cols="50" readonly >
+-------------54-------------
+	
+</textarea>
+
+	
+<textarea  rows="20" cols="50" readonly >
+--------------55------------
+	
+</textarea>
+
+	
+<textarea  rows="20" cols="50" readonly >
+------------56-------------
+
+</textarea>
+
+	
+<textarea  rows="20" cols="50" readonly >
+------------57-------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        if(n!=0)
+        {
+         int []a=new int[n];
+         for(int i=0;i<n;i++)
+         {
+            a[i]=s.nextInt();
+         }
+         int i=0,j;
+         while(i!=n-1)
+         {
+           while(a[i]!=0)
+           {
+               i++;
+           }
+            j=i+1;
+            while(a[j]==0)
+            {
+                j++;
+            }
+            int temp=a[j];
+            a[j]=a[i];
+            a[i]=temp;
+            i=j;
+         }
+         for(int k=0;k<n;k++)
+         {
+            System.out.print(a[k]+" ");
+         }
+        }
+        else
+        {
+            System.out.println("Invalid input");
+        }
+    }
+}
+</textarea>
+
+	
+<textarea  rows="20" cols="50" readonly >
+---------58-----------------
+</textarea>
+
+	
+<textarea  rows="20" cols="50" readonly >
+----------------59-------------
+
 
 </textarea>
 <textarea  rows="20" cols="50" readonly >
 -----------60----------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int m=s.nextInt();
+        ArrayList<Integer>list=new ArrayList<>();
+        ArrayList<Integer>mat=new ArrayList<>();
+        for(int i=0;i<n;i++)
+        {
+            list.add(s.nextInt());
+        }
+        for(int i=0;i<m;i++)
+        {
+            mat.add(s.nextInt());
+        }
+        Collections.sort(list);
+        Collections.sort(mat);
+        int d=(list.get(n-1)*mat.get(0));
+        System.out.println("max element in first array is "+list.get(n-1)+" and min element in second array ");
+        System.out.print("is "+mat.get(0)+". The product of these two is "+d+".");
+    }
+}
 
 
 </textarea>
