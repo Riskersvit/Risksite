@@ -134,7 +134,24 @@ int main() {
 
 <textarea  rows="20" cols="50" readonly >
 ------------5----------------
+import java.io.*;
+import java.util.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int sum=0;
+        while(s.hasNext())
+        {
+            String []b=s.nextLine().split(" ");
+            int n=b.length;
+            sum=sum+n;
+        }
+        System.out.println("Number of Words = "+sum);
+    }
+}
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
@@ -332,12 +349,48 @@ int main() {
 
 <textarea  rows="20" cols="50" readonly >
 ------------11--------------
+import java.io.*;
+import java.util.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String []a=s.next().split("");
+         ArrayList<String>list=new ArrayList<>();
+        int n=a.length;
+        for(int i=0;i<n;i++)
+        {
+            list.add(a[i]);
+        }
+        Collections.sort(list);
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(list.get(i)+" ");
+        }
+    }
+}
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
 --------12------------------
 
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String a=s.nextLine();
+        String b="the ";
+        a=a.replaceFirst(b,"");
+        System.out.println(a);
+        
+    }
+}
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
@@ -458,22 +511,329 @@ public class Solution {
 }
 
 </textarea>
-
 <textarea  rows="20" cols="50" readonly >
+-------------18-------------
+import java.io.*;
+import java.util.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String a=s.next();
+        int n=a.length();
+        String b="";
+        for(int i=0;i<n;i++)
+        {
+            char c=a.charAt(i);
+            if(Character.isLowerCase(c) || Character.isUpperCase(c))
+            {
+                b=b+c;
+            }
+        }
+        System.out.println(b);
+    }
+}
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+-----------------19-----------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+--------------------20------------
+import java.io.*;
+import java.util.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String []a=s.nextLine().split(" ");
+        ArrayList<String>list=new ArrayList<>();
+        int n=a.length;
+        for(int i=0;i<n;i++)
+        {
+            list.add(a[i]);
+        }
+        Collections.sort(list);
+        System.out.print("The sorted name list is : ");
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(list.get(i)+" ");
+        }
+    }
+}
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-----------------21----------------
+import java.io.*;
+import java.util.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String []a=s.nextLine().split(":");
+        int n=a.length;
+        String b=a[1];
+        StringBuilder rev=new StringBuilder(b);
+        rev.reverse();
+        System.out.println(rev);
+    }
+}
 </textarea>
+
+<textarea  rows="20" cols="50" readonly >
+----------------22------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-------------23---------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+----------------24-------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-------------25-------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+------------26-------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-------------27-------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------28-------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------29------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------30--------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-------------------31----------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+----------------32------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);;
+        String d=s.next();
+        System.out.println(d);
+        int n=d.length();
+        for(int i=1;i<n;i++)
+        {
+            String b;
+            b=d.substring(i)+d.substring(0,i);
+            System.out.println(b);
+        }
+    }
+}
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+----33--------------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------34-----------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+----------------35---------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------36------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-------------------37----------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-----------------38---------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+--------------------39------------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+----------------40---------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-----41---------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+-------------------42-----------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+----------------43------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String a=s.nextLine();
+        String b=s.next();
+        int n=s.nextInt();
+        if(n>a.length())
+        {
+            System.out.println("Insertion not possible");
+        }
+        else
+        {
+            String d="";
+            d=d+a.substring(0,n)+b+a.substring(n);
+            System.out.println(d);
+        }
+    }
+}
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------------44-----------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String []a=s.nextLine().split(" ");
+        String b=s.next();
+        int n=a.length;
+        for(int i=0;i<n;i++)
+        {
+            if(a[i].equals(b))
+            {
+                System.out.print("Yes");
+                return;
+            }
+        }
+        System.out.println("No");
+    }
+}
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+--------------45----------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String []a=s.nextLine().split(" ");
+        String b="";
+        int n=a.length;
+        for(int i=n-1;i>=0;i--)
+        {
+            b=b+a[i]+" ";
+        }
+        System.out.println(b.substring(0,1).toUpperCase()+b.substring(1));
+    }
+}
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+---------------46--------------
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+----------------47---------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String a=s.next();
+        String b=s.next();
+        int n=a.length();
+        int m=b.length();
+        int count=0;
+        for(int i=0;i<n-m+1;i++)
+        {
+            String d=a.substring(i,i+m);
+            if(d.equals(b))
+            {
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
+</textarea>
+
+<textarea  rows="20" cols="50" readonly >
+------------------48-------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String a=s.next();
+        String b=s.next();
+        int n=a.length();
+        int f=0;
+        if(n%2==0)
+        {
+            String d=a.substring(n/2)+a.substring(0,n/2);
+            if(d.equals(b))
+            {
+                f=1;
+            }
+        }
+        else
+        {
+            String d=a.substring(n/2+1)+a.charAt(n/2)+a.substring(0,n/2);
+            if(d.equals(b))
+            {
+                f=1;
+            }
+        }
+       System.out.println(f);
+    }
+}
+</textarea>
+
+
 
 
 
