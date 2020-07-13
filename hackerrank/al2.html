@@ -59,118 +59,187 @@ body {
 
 
 </textarea>
+------------61---------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int m=s.nextInt();
+        int []a=new int[n];
+        int []b=new int[m];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        for(int i=0;i<m;i++)
+        {
+            b[i]=s.nextInt();
+        }
+        int k=0,j=0;
+        while(k<n && j<m)
+        {
+            System.out.print(a[k]+" "+b[j]+" ");
+            k++;
+            j++;
+        }
+        while(k<n)
+        {
+            System.out.print(a[k]+" ");
+            k++;
+            
+        }
+        while(j<m)
+        {
+            System.out.print(b[j]+" ");
+            j++;
+        }
+    }
+}
 
 <textarea  rows="20" cols="50" readonly >
-
+----------------62---------------
+	
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+---------------------63----------------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+---------------64-----------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+-------------------65-----------------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+--------------------66-----------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+------------------67---------------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+------68----------------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+--------------69--------------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+--------------------70----------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+----71--------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+--------------72--------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+----------------------73-------------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+-----------------74------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+-----------------75----------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+----------------76------------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+-------------------77----------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+-----------------78-----------------
 </textarea>
 
 
 <textarea  rows="20" cols="50" readonly >
-
+-----------------79--------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+---------------------80-------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-------------81---------------------
+import java.io.*;
+import java.util.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        ArrayList<Integer>list=new ArrayList<>();
+        int n=s.nextInt();
+        for(int i=0;i<n;i++)
+        {
+            int m=s.nextInt();
+            if(list.contains(m)==false)
+            {
+                list.add(m);
+            }
+        }
+        int a=list.size();
+        for(int i=0;i<a;i++)
+        {
+            System.out.print(list.get(i)+" ");
+        }
+    }
+}
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
+-------------82-----------------
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
+-------------------83-----------------
+import java.io.*;
+import java.util.*;
 
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        String []a=s.nextLine().split(" ");
+        String b=s.next();
+        int n=a.length;
+        for(int i=0;i<n;i++)
+        {
+            if(a[i].equals(b))
+            {
+                System.out.println("Yes");
+                return;
+            }
+        }
+        System.out.println("No");
+    }
+}
 </textarea>
 
 <textarea  rows="20" cols="50" readonly >
-
-</textarea>
-
-<textarea  rows="20" cols="50" readonly >
-
-</textarea>
-
-<textarea  rows="20" cols="50" readonly >
-
-</textarea>
-
-<textarea  rows="20" cols="50" readonly >
-
-</textarea>
-
-<textarea  rows="20" cols="50" readonly >
-
-</textarea>
-
-<textarea  rows="20" cols="50" readonly >
-
+-----------84--------------
 </textarea>
 
 
