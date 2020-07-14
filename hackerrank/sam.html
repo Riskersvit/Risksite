@@ -59,7 +59,9 @@ if (this.document.login.pass.value == password4) {
 if (this.document.login.pass.value == password5) {
   top.location.href="stringlevel1.html";
 }
-
+else if (this.document.login.pass.value != password5 || password1 || password2 || password3 || password4 || password) {
+  window.alert("Incorrect password, please try again.");
+}
 
 <!-- else {
   window.alert("Incorrect password, please try again.");
