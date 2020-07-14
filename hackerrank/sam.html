@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="but.css">
+ <link rel="stylesheet" type="text/css" href="text.css">
+ <link rel="stylesheet" type="text/css" href="bg.css">
+ <link rel="stylesheet" type="text/css" href="foot.css">
+ <link rel="stylesheet" type="text/css" href="bg-pad.css">
+<title>Login</title>
+<meta charset="UTF-8">
+
+
+
+
+
+<script type="text/javascript">
+// PASSWORD PROTECTION SCRIPT
+
+function TheLogin() {
+
+var password = 'prenigga';
+var password1 = 'beginnigga';
+var password2 = 'middlenigga';
+var password3 = 'arrayslevel1nigga';
+var password4 = 'arrayslevel2nigga';
+var password5 = 'stringslevel1nigga';
+
+if (this.document.login.pass.value == password) {
+  top.location.href="svespre.html";
+}
+if (this.document.login.pass.value == password2) {
+  top.location.href="svesbegin1.html";
+}
+
+if (this.document.login.pass.value == password3) {
+  top.location.href="arrayslevel1.html";
+}
+if (this.document.login.pass.value == password4) {
+  top.location.href="arrayslevel2.html";
+}
+if (this.document.login.pass.value == password5) {
+  top.location.href="stringlevel1.html";
+}
+
+
+else {
+  window.alert("Incorrect password, please try again.");
+  }
+}
+
+</script>
+
+
+
+
+
+</head>
+
+<body>
+
+<br><br><br><br>
+
+
+
+
+
+<div style="text-align: center; margin: 0 auto; color: #0000FF; font: normal 22px arial, sans-serif;">
+<span class="bg-pad">Enter The Password </span>
+<form name="login" style="margin: 205px 0px 0px 0px;">
+<input type="password" name="pass" size="17" onkeydown="if(event.keyCode==13) return false;" style="width: 232px;"><br>
+<input type="button" class="buttonr button3" value="Click to Login" style="width: 232px; margin: 4px auto 4px auto;" onclick="javascript:TheLogin(this.form)">
+
+</form>
+
+
+
+</div>
+
+
+
+
+
+<br><br><br>
+
+</body>
+<div class="footer">
+  <p>Designed And Developed By @Balu Phanendra</p>
+</div>
+</html>
