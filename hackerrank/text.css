@@ -10,6 +10,6 @@ input[type=password]{
   }
   
   input[type=password]:focus{
-    border-color:red;
-    box-shadow:0 0 8px 0 red;
+    border-color:violet;
+    box-shadow:0 0 8px 0 violet;
   }
