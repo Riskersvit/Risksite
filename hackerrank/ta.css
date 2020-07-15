@@ -2,7 +2,7 @@ input[type="text"],
 select,
 textarea {
   background: url(bgt.jpg) center center no-repeat;
- 
+  resize: none;
   color:#39ff14 ;
   border-radius: 2px;
   
