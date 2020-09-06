@@ -34,7 +34,7 @@ if (this.document.login.pass.value == password) {
 if (this.document.login.pass.value == password1) {
   top.location.href="http://risksite.cf/vedios.html";
 }
-else {
+else if (this.document.login.pass.value != password && this.document.login.pass.value != password1){
   window.alert("Incorrect password, please try again.");
   }
 }
