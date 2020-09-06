@@ -61,9 +61,9 @@ if (this.document.login.pass.value == password5) {
 }
 
 
- else {
+else if(this.document.login.pass.value != password && this.document.login.pass.value != password2 && this.document.login.pass.value != password3 && this.document.login.pass.value != password4 && this.document.login.pass.value != password5) {
   window.alert("Incorrect password, please try again.");
-  } 
+  }
 } 
 
 </script>
