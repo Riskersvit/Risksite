@@ -1,0 +1,10 @@
+.wrapper {
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.mdl-textfield {
+  width: 180px;
+  margin-right: 30px;
+}

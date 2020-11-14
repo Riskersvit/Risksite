@@ -1,0 +1,9 @@
+name: firebase.firebase_Firebase_Firebase.push_Firebase.onChildAdded_'chatbox'
+description: |
+  How to make a very simple public #chatbox using firebase.
+homepage: https://gist.github.com/kasperpeulen/2d1d6184e6cb5fecdac1
+homepage: https://gist.github.com/kasperpeulen/2d1d6184e6cb5fecdac1
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  firebase: '>=0.6.1 <0.7.0'
