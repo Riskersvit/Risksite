@@ -160,6 +160,17 @@ public class Solution {
 
 
 <textarea  rows="20" cols="50" readonly >
+------wipro UniqueIDs------
+n,m=map(int,input().split())
+s=0
+for i in input().split():
+    z=''
+    for j in i:
+        if j.isnumeric():
+            z+=j
+    i=int(z)
+    s+=i//m
+print(s)
 
 </textarea>
 </body>
