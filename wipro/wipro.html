@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<title> Wipro </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166644321-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-166644321-1');
+</script>
+
+
+
+
+<ul>
+  <li><a href="http://risksite.cf">Home</a></li>
+	
+	</ul>
+<link rel="stylesheet" type="text/css" href="men.css">
+<link rel="stylesheet" type="text/css" href="foot.css">
+<link rel="stylesheet" type="text/css" href="ta.css">
+<link rel="shortcut icon" type="image/png" href="ic/favicon-32x32.png">
+</head>
+
+
+
+<style>
+body {
+  background-image: url('prr.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+
+
+<body>
+    
+<h1 style="color:yellow;text-align:center;font-family:verdana;">Wipro Practice</h1>
+
+<textarea  rows="20" cols="50" readonly >
+--------------wipro BucketID----------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int list=s.nextInt();
+       while(list!=0)
+       {
+           int file=s.nextInt();
+           int sum=0;
+           while(file!=0)
+           {
+               int r=file%10;
+               file=file/10;
+               sum=sum+r;
+           }
+           System.out.print(sum+" ");
+           list--;
+       }
+    }
+}
+
+
+
+</textarea>
+<textarea  rows="20" cols="50" readonly >
+----------------wipro: Bookshelf Wishes------------------
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        if(num>=30 && num<50){
+            System.out.println("D");
+        }
+        else if(num>=51 && num<60){
+            System.out.println("C");
+        }
+        else if(num>=1 && num<80){
+            System.out.println("B");
+        }
+        else if(num>=81 && num<100){
+            System.out.println("A");
+        }
+    }
+}
+
+
+
+
+
+</textarea>
+<textarea  rows="20" cols="50" readonly >
+--------------- wirpo area of the largest triangle--------------------
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        int b1 = sc.nextInt();
+        int h1 = sc.nextInt();
+        int b2 = sc.nextInt();
+        int h2 = sc.nextInt();
+        double area1 = (double)(b1*h1)/2;
+        double area2 = (double)(b2*h2)/2;
+        if(area1>area2){
+            System.out.format("%.6f",area1);
+        }
+        else{
+            System.out.format("%.6f",area2);
+        }
+    }
+}
+</textarea>
+<textarea  rows="20" cols="50" readonly >
+--------------persist memory allocation-----------
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int a[]=new int[n];
+        int sum=0;
+        for(int i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+            if(i%2==0)
+            {
+                sum=sum+a[i];
+            }
+        }
+        System.out.println(sum);
+    }
+}
+</textarea>
+
+
+
+<textarea  rows="20" cols="50" readonly >
+
+</textarea>
+</body>
+
+ <div class="footer">
+  <p>Designed And Developed By @Balu Phanendra</p>
+</div>
+
+</html>
